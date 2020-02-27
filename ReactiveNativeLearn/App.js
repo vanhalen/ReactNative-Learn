@@ -1,14 +1,13 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import styles from './styles';
+import React, { Component } from 'react';
+import Welcome from './Welcome';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.texto}>Calculadora Simples Nacional</Text>
-        <Text style={styles.logo}>
-          Calculei <Text style={styles.slogan}>a melhor forma de calcular sua rentabilidade</Text>
-        </Text>
-    </View>
-  );
+
+export default class App extends Component {
+  render(){
+    return(
+      <Welcome
+      titulo="Calculadora - Simples Nacional"
+      slogan=" a forma mais prática para calcular seus investimentosss"></Welcome>
+    )
+  }
 }
