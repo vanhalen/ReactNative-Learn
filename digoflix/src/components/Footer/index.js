@@ -11,7 +11,7 @@ function Footer() {
         />
       </a>
       <p>
-        Esse site é destinado para aprendizado de React{" "}
+        Esse site é destinado para o aprendizado do React{" "}
         <a href="https://pbs.twimg.com/profile_images/1066036074/motumbo_400x400.jpg">
           Imersão React - Chupicknévis
         </a>
