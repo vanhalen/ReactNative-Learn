@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../../assets/img/logo.png";
 import "./Menu.css";
+import Button from "../Button";
+// import ButtonLink from "./ButtonLink";
 
 function Menu() {
   return (
@@ -8,8 +10,12 @@ function Menu() {
       <a href="/">
         <img className="Logo" src={Logo} alt="Logo Digoflix" />
       </a>
+
+      {/* as="a" o button vai se comportar como uma tag a */}
+      <Button as="a" className="ButtonLink" href="/">
+        Novo Vídeo
+      </Button>
     </nav>
-    // <html></html>
   );
 }
 
