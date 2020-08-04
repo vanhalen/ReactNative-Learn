@@ -1,97 +1,71 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Música",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Hard Rock",
+        "url": "https://www.youtube.com/watch?v=Twi4sZrWhEE"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Eddie Van Halen - Eruption!",
+          "url": "https://www.youtube.com/watch?v=L9r-NxuYszg"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Van Halen - Can't Stop Loving You",
+          "url": "https://www.youtube.com/watch?v=Twi4sZrWhEE"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Mötley Crüe - Looks That Kill",
+          "url": "https://www.youtube.com/watch?v=9wPHxQMgdKs"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Poison - Talk Dirty To Me ",
+          "url": "https://www.youtube.com/watch?v=xCChxBSRo1Y"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Cinderella - Don't Know What You Got",
+          "url": "https://www.youtube.com/watch?v=i28UEoLXVFQ"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Led Zeppelin - All of My Love",
+          "url": "https://www.youtube.com/watch?v=z0DAnu5Sq6k"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "Greta Van Fleet - Highway Tune",
+          "url": "https://www.youtube.com/watch?v=aJg4OJxp-co"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
-      ]
-    },
-    {
-      "titulo": "Back End",
-      "cor": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      },
-      "videos": [
-        {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-        },
-        {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-        },
-        {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-        },
-        {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
-        {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Deep Purple - Highway Star",
+          "url": "https://www.youtube.com/watch?v=UAKCR7kQMTQ"
         }
       ]
     },
+
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Programação",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Curso de Git",
+        "url": "https://www.youtube.com/watch?v=WVLhm1AMeYE&list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "text": "Curso de Git",
+          "url": "https://www.youtube.com/watch?v=WVLhm1AMeYE&list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Docker",
+          "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo"
         },
         {
           "titulo": "Melhor forma de aprender Python",
           "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        },
+        {
+          "titulo": "API com NodeJS",
+          "url": "https://www.youtube.com/watch?v=wDWdqlYxfcw&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn"
         },
         {
           "titulo": "Como ingressar no mercado de Data Science?",
@@ -104,20 +78,20 @@
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "O Lobo de Wall Street",
+          "url": "https://www.youtube.com/watch?v=ZS96hRT7yx0"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Clube de Compras Dallas",
+          "url": "https://www.youtube.com/watch?v=MaFHkWGKP_w"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Corra!",
+          "url": "https://www.youtube.com/watch?v=lsGJOpqE-0k"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Jobs",
+          "url": "https://www.youtube.com/watch?v=Dgk6ExjjXOs"
         }
       ]
     },
@@ -125,59 +99,101 @@
       "titulo": "Games",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Shadow Of The Colossus",
+        "url": "https://www.youtube.com/watch?v=BbFoH6LX8Qw&t=980s"
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Shadow Of The Colossus",
+          "url": "https://www.youtube.com/watch?v=BbFoH6LX8Qw&t=980s"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "ICO",
+          "url": "https://www.youtube.com/watch?v=jBSGuySQR5k"
         },
         {
           "titulo": "God of War 4",
           "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+          "titulo": "The Last of Us - O Filme",
+          "url": "https://www.youtube.com/watch?v=9af6frYTor4"
         },
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "Uncharted 4",
+          "url": "https://www.youtube.com/watch?v=MwCw2vj3XO8"
+        },
+        {
+          "titulo": "OPL - PS2",
+          "url": "https://www.youtube.com/watch?v=aPRK2aV2_Og"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
+      "titulo": "Contrabaixo",
       "cor": "#6b5be2",
+      "videos": [
+        {
+          "titulo": "Have You Ever Seen The Rain - Creedence",
+          "url": "https://www.youtube.com/watch?v=wCx-GTgqths"
+        },
+        {
+          "titulo": "Smells Like Teen Spirit - Nirvana",
+          "url": "https://www.youtube.com/watch?v=trkc-sVKRwY"
+        },
+        {
+          "titulo": "Can't Stop - Red Hot Chili Peppers",
+          "url": "https://www.youtube.com/watch?v=0-8h3vbcjKE"
+        },
+        {
+          "titulo": "Seven Nation Army - The White Stripes",
+          "url": "https://www.youtube.com/watch?v=8npszAZN4YA"
+        },
+        {
+          "titulo": "Back In Black - AC/DC",
+          "url": "https://www.youtube.com/watch?v=JntmJSF_d_I"
+        }
+      ]
+    },
+    {
+      "titulo": "Viagens",
+      "cor": "#00C86F",
       "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+        "text": "Mar e Música",
+        "url": "https://www.youtube.com/watch?v=ut5ZlS7iG58"
       },
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "A cidade onde o mar toca um instrumento sem parar!",
+          "url": "https://www.youtube.com/watch?v=ut5ZlS7iG58"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Decoração externa do motorhome",
+          "url": "https://www.youtube.com/watch?v=ej2s2Kx0RnY"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Estrada do Capeta",
+          "url": "https://www.youtube.com/watch?v=q92vO1R-m3k"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "O início de tudo",
+          "url": "https://www.youtube.com/watch?v=OlWCMWZW46Q&t=39s"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Uma História de Amor",
+          "url": "https://www.youtube.com/watch?v=bwa_8KVIOeI"
+        },
+        {
+          "titulo": "Como Ele Viajou Europa com 6 Euros ao Dia por 9 Meses",
+          "url": "https://www.youtube.com/watch?v=Pkl4gWqWfAM"
+        },
+        {
+          "titulo": "10 lugares mais impressionantes na América do Sul",
+          "url": "https://www.youtube.com/watch?v=XCdssloINEY&list=PLGs65oMU2n0NH-ICJVRbrPWjx37b5TdOl&index=5"
+        },
+        {
+          "titulo": "Como ir de ônibus para as praias de Cancún",
+          "url": "https://www.youtube.com/watch?v=cPB9W5b5nB4&list=PLGs65oMU2n0NH-ICJVRbrPWjx37b5TdOl&index=7"
         }
       ]
     }
