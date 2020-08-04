@@ -6,6 +6,14 @@
     max-width: 105px;
   }
 }
+.Rodape {
+  max-width: 100px;
+}
+@media (max-width: 100px) {
+  .Rodape {
+    max-width: 100px;
+  }
+}
 
 .Menu {
   width: 100%;
