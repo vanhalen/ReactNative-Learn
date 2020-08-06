@@ -39,6 +39,21 @@ const TextFieldWhite = withStyles({
   },
 })(TextField);
 
+const ButtonSucces = withStyles({
+  root: {
+    // #009422
+    borderColor: "#fff",
+    color: "#fff",
+    "&  MuiButton-outlined": {
+      color: "#fff",
+    },
+    "&:hover": {
+      color: "#009422",
+      borderColor: "#fff",
+    },
+  },
+})(Button);
+
 function CadastroCategoria() {
   return (
     <PageDefault>
@@ -58,7 +73,9 @@ function CadastroCategoria() {
         />
 
         <Box display="flex" justifyContent="flex-end">
-          <Button variant="contained">Cadastrar</Button>
+          <ButtonSucces variant="outlined" color="primary" disableRipple>
+            Cadastrar
+          </ButtonSucces>
         </Box>
       </form>
       <Link to="/">Ir para home</Link>
