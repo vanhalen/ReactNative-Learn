@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import PageDefault from "../../../components/PageDefault";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import Box from "@material-ui/core/Box";
 import { withStyles } from "@material-ui/core/styles";
+import { Input } from "@material-ui/core";
 
 const TextFieldWhite = withStyles({
   root: {
@@ -54,15 +55,30 @@ const ButtonSucces = withStyles({
 })(Button);
 
 function CadastroCategoria() {
+  //Utilizando set para edição de variável
+  const [categorias, setCategorias] = useState(["TesteArray"]);
+  const [nomeDaCategoria, setNomeDaCategoria] = useState("");
+
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria</h1>
-      <form>
+      {/* <h1>Cadastro de Categoria</h1> */}
+      <h1>Cadastro de Categoria: {nomeDaCategoria}</h1>
+      <form
+        onSubmit={function handleSubmit(infosDoEvento) {
+          infosDoEvento.preventDefault();
+          setCategorias([...categorias, nomeDaCategoria]);
+        }}
+      >
         <TextFieldWhite
           id="titulo"
           label="Nome da Categoria:"
           variant="outlined"
           autoComplete="off"
+          value={nomeDaCategoria}
+          //Função para salvar o estado - Pode ter qualquer nome
+          onChange={function saveState(infosEvento) {
+            setNomeDaCategoria(infosEvento.target.value);
+          }}
           fullWidth
         />
         <TextFieldWhite
@@ -72,9 +88,16 @@ function CadastroCategoria() {
           autoComplete="off"
           fullWidth
         />
-
+        Cor: <Input type="color" fullWidth />
+        <ul>
+          {categorias.map((categoria, indice) => {
+            // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
+            return <li key={categoria + indice}>{categoria}</li>;
+          })}
+        </ul>
+        <Button>cadastrar</Button>
         <Box display="flex" justifyContent="flex-end">
-          <ButtonSucces variant="outlined" color="primary" disableRipple>
+          <ButtonSucces variant="outlined" color="primary" type="submit">
             Cadastrar
           </ButtonSucces>
         </Box>
