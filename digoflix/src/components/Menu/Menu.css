@@ -8,6 +8,7 @@
 }
 .Rodape {
   max-width: 100px;
+  margin-bottom: -15px;
 }
 @media (max-width: 100px) {
   .Rodape {
