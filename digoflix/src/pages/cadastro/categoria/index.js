@@ -10,14 +10,13 @@ const TextFieldWhite = withStyles({
   root: {
     background: "#292626",
     borderColor: "#f1f1f1",
-    margin: "1rem",
+    marginBottom: "1rem",
     color: "#f1f1f1",
 
     //Label do form
     "& .MuiFormLabel-root": {
       color: "#f1f1f1",
       borderColor: "#f1f1f1",
-      borderLeftWidth: "10",
     },
     //Cor do Texto
     "& input": {
@@ -63,12 +62,14 @@ function CadastroCategoria() {
           id="titulo"
           label="Nome da Categoria:"
           variant="outlined"
+          autoComplete="off"
           fullWidth
         />
         <TextFieldWhite
           id="link_extra"
           label="Link Extra:"
           variant="outlined"
+          autoComplete="off"
           fullWidth
         />
 
