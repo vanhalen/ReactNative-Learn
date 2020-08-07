@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 import PageDefault from "../../../components/PageDefault";
 import { Link } from "react-router-dom";
-import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
-import { withStyles } from "@material-ui/core/styles";
 import FormField from "../../../components/FormField";
-
-const ButtonSucces = withStyles({
-  root: {
-    // #009422
-    borderColor: "#fff",
-    color: "#fff",
-    "&  MuiButton-outlined": {
-      color: "#fff",
-    },
-    "&:hover": {
-      color: "#009422",
-      borderColor: "#fff",
-    },
-  },
-})(Button);
+import FormButton from "../../../components/FormButton";
 
 function CadastroCategoria() {
   const values = {
@@ -80,10 +64,9 @@ function CadastroCategoria() {
             return <li key={categoria + indice}>{categoria.titulo}</li>;
           })}
         </ul>
+        {/* Ordena o botão para o lado direito da tela */}
         <Box display="flex" justifyContent="flex-end">
-          <ButtonSucces variant="outlined" color="primary" type="submit">
-            Cadastrar
-          </ButtonSucces>
+          <FormButton value="Cadastrar" />
         </Box>
       </form>
       <Link to="/">Ir para home</Link>
