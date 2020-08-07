@@ -33,15 +33,15 @@ const TextFieldWhite = withStyles({
   },
 })(TextField);
 
-function FormField(props) {
+function FormField({ label, value, name, onChange }) {
   return (
     <TextFieldWhite
-      label={props.label}
+      label={label}
       variant="outlined"
       autoComplete="off"
-      value={props.value}
-      name={props.name}
-      onChange={props.onChange}
+      value={value}
+      name={name}
+      onChange={onChange}
       fullWidth
     />
   );
