@@ -12,7 +12,7 @@ function CadastroCategoria() {
     cor: "#ff0000",
   };
   //Utilizando set para edição de variável
-  const [categorias, setCategorias] = useState(["TesteArray"]);
+  const [categorias, setCategorias] = useState([]);
   const [form, setForm] = useState(values);
 
   /**Seta os valores para o form */
@@ -34,7 +34,9 @@ function CadastroCategoria() {
   function handleSubmit(infosDoEvento) {
     infosDoEvento.preventDefault();
     setCategorias([...categorias, form]);
-    setValue({ values });
+
+    //Limpando campos
+    setForm(values);
   }
 
   return (
