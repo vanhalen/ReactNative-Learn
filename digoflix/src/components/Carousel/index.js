@@ -29,7 +29,7 @@ function Carousel({ ignoreFirstVideo, category }) {
           }
 
           return (
-            <SliderItem key={video.titulo}>
+            <SliderItem key={video.url}>
               <VideoCard
                 videoTitle={video.titulo}
                 videoURL={video.url}
