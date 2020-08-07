@@ -2,42 +2,9 @@ import React, { useState } from "react";
 import PageDefault from "../../../components/PageDefault";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
 import Box from "@material-ui/core/Box";
 import { withStyles } from "@material-ui/core/styles";
-import { Input } from "@material-ui/core";
-
-const TextFieldWhite = withStyles({
-  root: {
-    background: "#292626",
-    borderColor: "#f1f1f1",
-    marginBottom: "1rem",
-    color: "#f1f1f1",
-
-    //Label do form
-    "& .MuiFormLabel-root": {
-      color: "#f1f1f1",
-      borderColor: "#f1f1f1",
-    },
-    //Cor do Texto
-    "& input": {
-      color: "#f1f1f1",
-    },
-
-    "& .MuiOutlinedInput-root": {
-      //Aqui é a borda do campo
-      "& fieldset": {
-        borderColor: "white",
-      },
-      "&:hover fieldset": {
-        borderColor: "white",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "white",
-      },
-    },
-  },
-})(TextField);
+import FormField from "../../../components/FormField";
 
 const ButtonSucces = withStyles({
   root: {
@@ -91,34 +58,22 @@ function CadastroCategoria() {
       {/* <h1>Cadastro de Categoria</h1> */}
       <h1>Cadastro de Categoria: {form.titulo}</h1>
       <form onSubmit={handleSubmit}>
-        <TextFieldWhite
-          label="Nome da Categoria:"
-          variant="outlined"
-          autoComplete="off"
-          value={form.titulo}
+        <FormField
           name="titulo"
+          label="Nome da Categoria:"
+          value={form.titulo}
           //Função para salvar o estado - Pode ter qualquer nome
           onChange={saveState}
-          fullWidth
         />
-        <TextFieldWhite
-          id="link_extra"
+        <FormField
+          name="link_extra"
           label="Link Extra:"
           value={form.link_extra}
-          variant="outlined"
-          autoComplete="off"
-          name="link_extra"
           onChange={saveState}
-          fullWidth
         />
         Cor:{" "}
-        <Input
-          type="color"
-          value={form.cor}
-          name="cor"
-          onChange={saveState}
-          fullWidth
-        />
+        {/* <Input type="color" value={form.cor} name="cor" onChange={saveState} fullWidth /> */}
+        <input type="color" value={form.cor} name="cor" onChange={saveState} />
         <ul>
           {categorias.map((categoria, indice) => {
             // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
