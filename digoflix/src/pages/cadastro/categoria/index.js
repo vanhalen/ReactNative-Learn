@@ -50,6 +50,7 @@ function CadastroCategoria() {
           value={form.titulo}
           //Função para salvar o estado - Pode ter qualquer nome
           onChange={saveState}
+          required
         />
         <FormField
           name="link_extra"

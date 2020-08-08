@@ -33,7 +33,7 @@ const TextFieldWhite = withStyles({
   },
 })(TextField);
 
-function FormField({ label, value, name, onChange }) {
+function FormField({ label, value, name, onChange, required = false }) {
   return (
     <TextFieldWhite
       label={label}
@@ -42,6 +42,7 @@ function FormField({ label, value, name, onChange }) {
       value={value}
       name={name}
       onChange={onChange}
+      required={required}
       fullWidth
     />
   );
