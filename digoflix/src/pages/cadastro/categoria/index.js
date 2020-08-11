@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import PageDefault from "../../../components/PageDefault";
-import { Link } from "react-router-dom";
-import Box from "@material-ui/core/Box";
-import FormField from "../../../components/FormField";
-import FormButton from "../../../components/FormButton";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Box from '@material-ui/core/Box';
+import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+import FormButton from '../../../components/FormButton';
 
 function CadastroCategoria() {
   const values = {
-    titulo: "",
-    link_extra: "",
-    descricao: "",
-    cor: "#ff0000",
+    titulo: '',
+    link_extra: '',
+    descricao: '',
+    cor: '#ff0000',
   };
-  //Utilizando set para edição de variável
+  // Utilizando set para edição de variável
   const [categorias, setCategorias] = useState([]);
   const [form, setForm] = useState(values);
 
-  /**Seta os valores para o form */
+  /** Seta os valores para o form */
   function setValue(key, value) {
     setForm({
       ...form,
@@ -24,11 +24,11 @@ function CadastroCategoria() {
     });
   }
 
-  /** Salva o estado do form quando o usuário alterar o valor*/
+  /** Salva o estado do form quando o usuário alterar o valor */
   function saveState(infosEvento) {
     // const { getAttribute, value } = infosEvento.target;
     // setValue(getAttribute("name"), value);
-    setValue(infosEvento.target.getAttribute("name"), infosEvento.target.value);
+    setValue(infosEvento.target.getAttribute('name'), infosEvento.target.value);
   }
 
   /** Faz Submit do form */
@@ -36,20 +36,24 @@ function CadastroCategoria() {
     infosDoEvento.preventDefault();
     setCategorias([...categorias, form]);
 
-    //Limpando campos
+    // Limpando campos
     setForm(values);
   }
 
   return (
     <PageDefault>
       {/* <h1>Cadastro de Categoria</h1> */}
-      <h1>Cadastro de Categoria: {form.titulo}</h1>
+      <h1>
+        Cadastro de Categoria:
+        {' '}
+        {form.titulo}
+      </h1>
       <form onSubmit={handleSubmit}>
         <FormField
           name="titulo"
           label="Nome da Categoria:"
           value={form.titulo}
-          //Função para salvar o estado - Pode ter qualquer nome
+          // Função para salvar o estado - Pode ter qualquer nome
           onChange={saveState}
           required
         />
@@ -74,10 +78,9 @@ function CadastroCategoria() {
           onChange={saveState}
         />
         <ul>
-          {categorias.map((categoria, indice) => {
-            // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
-            return <li key={categoria + indice}>{categoria.titulo}</li>;
-          })}
+          {categorias.map((categoria, indice) =>
+          // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
+            <li key={categoria + indice}>{categoria.titulo}</li>)}
         </ul>
         {/* Ordena o botão para o lado direito da tela */}
         <Box display="flex" justifyContent="flex-end">
