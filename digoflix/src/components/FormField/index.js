@@ -29,13 +29,30 @@ const TextFieldWhite = withStyles({
       "&.Mui-focused fieldset": {
         borderColor: "white",
       },
+      /* Para textarea */
+      "& .MuiInputBase-input": {
+        color: "#f1f1f1",
+      },
     },
   },
 })(TextField);
 
-function FormField({ label, value, name, onChange, required = false }) {
+function FormField({
+  label,
+  value,
+  name,
+  onChange,
+  type = "text",
+  multiline = false,
+  required = false,
+}) {
+  if (type === "color") {
+    return <input type="color" value={value} name={name} onChange={onChange} />;
+  }
+
   return (
     <TextFieldWhite
+      type={type}
       label={label}
       variant="outlined"
       autoComplete="off"
@@ -43,6 +60,7 @@ function FormField({ label, value, name, onChange, required = false }) {
       name={name}
       onChange={onChange}
       required={required}
+      multiline={multiline}
       fullWidth
     />
   );

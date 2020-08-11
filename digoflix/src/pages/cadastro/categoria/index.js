@@ -58,9 +58,20 @@ function CadastroCategoria() {
           value={form.link_extra}
           onChange={saveState}
         />
+        <FormField
+          name="descricao"
+          label="Descrição:"
+          type="textarea"
+          multiline
+        />
         Cor:{" "}
         {/* <Input type="color" value={form.cor} name="cor" onChange={saveState} fullWidth /> */}
-        <input type="color" value={form.cor} name="cor" onChange={saveState} />
+        <FormField
+          type="color"
+          value={form.cor}
+          name="cor"
+          onChange={saveState}
+        />
         <ul>
           {categorias.map((categoria, indice) => {
             // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
