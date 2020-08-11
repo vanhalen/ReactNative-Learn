@@ -9,6 +9,7 @@ function CadastroCategoria() {
   const values = {
     titulo: "",
     link_extra: "",
+    descricao: "",
     cor: "#ff0000",
   };
   //Utilizando set para edição de variável
@@ -61,13 +62,13 @@ function CadastroCategoria() {
         <FormField
           name="descricao"
           label="Descrição:"
-          type="textarea"
+          value={form.descricao}
+          onChange={saveState}
           multiline
         />
-        Cor:{" "}
-        {/* <Input type="color" value={form.cor} name="cor" onChange={saveState} fullWidth /> */}
         <FormField
           type="color"
+          label="Cor:"
           value={form.cor}
           name="cor"
           onChange={saveState}

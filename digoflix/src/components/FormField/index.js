@@ -4,10 +4,10 @@ import { TextField, withStyles } from "@material-ui/core";
 const TextFieldWhite = withStyles({
   root: {
     background: "#292626",
-    borderColor: "#f1f1f1",
+    // borderColor: "#f1f1f1",
     marginBottom: "1rem",
     color: "#f1f1f1",
-
+    borderRadius: "4px",
     //Label do form
     "& .MuiFormLabel-root": {
       color: "#f1f1f1",
@@ -21,13 +21,15 @@ const TextFieldWhite = withStyles({
     "& .MuiOutlinedInput-root": {
       //Aqui é a borda do campo
       "& fieldset": {
-        borderColor: "white",
+        // borderColor: "white",
       },
       "&:hover fieldset": {
-        borderColor: "white",
+        // borderColor: "white",
       },
       "&.Mui-focused fieldset": {
-        borderColor: "white",
+        // borderColor: "#f1f1f1",
+        borderColor: "transparent",
+        // borderColor: "#534b4b",
       },
       /* Para textarea */
       "& .MuiInputBase-input": {
@@ -46,10 +48,6 @@ function FormField({
   multiline = false,
   required = false,
 }) {
-  if (type === "color") {
-    return <input type="color" value={value} name={name} onChange={onChange} />;
-  }
-
   return (
     <TextFieldWhite
       type={type}
