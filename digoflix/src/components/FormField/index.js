@@ -29,7 +29,6 @@ const TextFieldWhite = withStyles({
       "&.Mui-focused fieldset": {
         // borderColor: "#f1f1f1",
         borderColor: "transparent",
-        // borderColor: "#534b4b",
       },
       /* Para textarea */
       "& .MuiInputBase-input": {
