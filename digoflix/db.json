@@ -1,0 +1,202 @@
+{
+    "categorias": [
+      {
+        "titulo": "Música",
+        "cor": "#6BD1FF",
+        "link_extra": {
+          "text": "Hard Rock",
+          "url": "https://www.youtube.com/watch?v=Twi4sZrWhEE"
+        },
+        "videos": [
+          {
+            "titulo": "Eddie Van Halen - Eruption!",
+            "url": "https://www.youtube.com/watch?v=L9r-NxuYszg"
+          },
+          {
+            "titulo": "Van Halen - Can't Stop Loving You",
+            "url": "https://www.youtube.com/watch?v=Twi4sZrWhEE"
+          },
+          {
+            "titulo": "Mötley Crüe - Looks That Kill",
+            "url": "https://www.youtube.com/watch?v=9wPHxQMgdKs"
+          },
+          {
+            "titulo": "Poison - Talk Dirty To Me ",
+            "url": "https://www.youtube.com/watch?v=xCChxBSRo1Y"
+          },
+          {
+            "titulo": "Cinderella - Don't Know What You Got",
+            "url": "https://www.youtube.com/watch?v=i28UEoLXVFQ"
+          },
+          {
+            "titulo": "Led Zeppelin - All of My Love",
+            "url": "https://www.youtube.com/watch?v=z0DAnu5Sq6k"
+          },
+          {
+            "titulo": "Greta Van Fleet - Highway Tune",
+            "url": "https://www.youtube.com/watch?v=aJg4OJxp-co"
+          },
+          {
+            "titulo": "Deep Purple - Highway Star",
+            "url": "https://www.youtube.com/watch?v=UAKCR7kQMTQ"
+          }
+        ]
+      },
+  
+      {
+        "titulo": "Programação",
+        "cor": "#9cd33b",
+        "link_extra": {
+          "text": "Curso de Git",
+          "url": "https://www.youtube.com/watch?v=WVLhm1AMeYE&list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0"
+        },
+        "videos": [
+          {
+            "text": "Curso de Git",
+            "url": "https://www.youtube.com/watch?v=WVLhm1AMeYE&list=PLInBAd9OZCzzHBJjLFZzRl6DgUmOeG3H0"
+          },
+          {
+            "titulo": "Docker",
+            "url": "https://www.youtube.com/watch?v=fqMOX6JJhGo"
+          },
+          {
+            "titulo": "Melhor forma de aprender Python",
+            "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          },
+          {
+            "titulo": "API com NodeJS",
+            "url": "https://www.youtube.com/watch?v=wDWdqlYxfcw&list=PLHlHvK2lnJndvvycjBqQAbgEDqXxKLoqn"
+          },
+          {
+            "titulo": "Como ingressar no mercado de Data Science?",
+            "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          }
+        ]
+      },
+      {
+        "titulo": "Filmes",
+        "cor": "orange",
+        "videos": [
+          {
+            "titulo": "O Lobo de Wall Street",
+            "url": "https://www.youtube.com/watch?v=ZS96hRT7yx0"
+          },
+          {
+            "titulo": "Clube de Compras Dallas",
+            "url": "https://www.youtube.com/watch?v=MaFHkWGKP_w"
+          },
+          {
+            "titulo": "Corra!",
+            "url": "https://www.youtube.com/watch?v=lsGJOpqE-0k"
+          },
+          {
+            "titulo": "Jobs",
+            "url": "https://www.youtube.com/watch?v=Dgk6ExjjXOs"
+          }
+        ]
+      },
+      {
+        "titulo": "Games",
+        "cor": "red",
+        "link_extra": {
+          "text": "Shadow Of The Colossus",
+          "url": "https://www.youtube.com/watch?v=BbFoH6LX8Qw&t=980s"
+        },
+        "videos": [
+          {
+            "titulo": "Shadow Of The Colossus",
+            "url": "https://www.youtube.com/watch?v=BbFoH6LX8Qw&t=980s"
+          },
+          {
+            "titulo": "ICO",
+            "url": "https://www.youtube.com/watch?v=jBSGuySQR5k"
+          },
+          {
+            "titulo": "God of War 4",
+            "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          },
+          {
+            "titulo": "The Last of Us - O Filme",
+            "url": "https://www.youtube.com/watch?v=9af6frYTor4"
+          },
+          {
+            "titulo": "Uncharted 4",
+            "url": "https://www.youtube.com/watch?v=MwCw2vj3XO8"
+          },
+          {
+            "titulo": "OPL - PS2",
+            "url": "https://www.youtube.com/watch?v=aPRK2aV2_Og"
+          }
+        ]
+      },
+      {
+        "titulo": "Contrabaixo",
+        "cor": "#6b5be2",
+        "videos": [
+          {
+            "titulo": "Have You Ever Seen The Rain - Creedence",
+            "url": "https://www.youtube.com/watch?v=wCx-GTgqths"
+          },
+          {
+            "titulo": "Smells Like Teen Spirit - Nirvana",
+            "url": "https://www.youtube.com/watch?v=trkc-sVKRwY"
+          },
+          {
+            "titulo": "Can't Stop - Red Hot Chili Peppers",
+            "url": "https://www.youtube.com/watch?v=0-8h3vbcjKE"
+          },
+          {
+            "titulo": "Seven Nation Army - The White Stripes",
+            "url": "https://www.youtube.com/watch?v=8npszAZN4YA"
+          },
+          {
+            "titulo": "Back In Black - AC/DC",
+            "url": "https://www.youtube.com/watch?v=JntmJSF_d_I"
+          }
+        ]
+      },
+      {
+        "titulo": "Viagens",
+        "cor": "#00C86F",
+        "link_extra": {
+          "text": "Mar e Música",
+          "url": "https://www.youtube.com/watch?v=ut5ZlS7iG58"
+        },
+        "videos": [
+          {
+            "titulo": "A cidade onde o mar toca um instrumento sem parar!",
+            "url": "https://www.youtube.com/watch?v=ut5ZlS7iG58"
+          },
+          {
+            "titulo": "Decoração externa do motorhome",
+            "url": "https://www.youtube.com/watch?v=ej2s2Kx0RnY"
+          },
+          {
+            "titulo": "Estrada do Capeta",
+            "url": "https://www.youtube.com/watch?v=q92vO1R-m3k"
+          },
+          {
+            "titulo": "O início de tudo",
+            "url": "https://www.youtube.com/watch?v=OlWCMWZW46Q&t=39s"
+          },
+          {
+            "titulo": "Uma História de Amor",
+            "url": "https://www.youtube.com/watch?v=bwa_8KVIOeI"
+          },
+          {
+            "titulo": "Como Ele Viajou Europa com 6 Euros ao Dia por 9 Meses",
+            "url": "https://www.youtube.com/watch?v=Pkl4gWqWfAM"
+          },
+          {
+            "titulo": "10 lugares mais impressionantes na América do Sul",
+            "url": "https://www.youtube.com/watch?v=XCdssloINEY&list=PLGs65oMU2n0NH-ICJVRbrPWjx37b5TdOl&index=5"
+          },
+          {
+            "titulo": "Como ir de ônibus para as praias de Cancún",
+            "url": "https://www.youtube.com/watch?v=cPB9W5b5nB4&list=PLGs65oMU2n0NH-ICJVRbrPWjx37b5TdOl&index=7"
+          }
+        ]
+      }
+    ]
+  }
+  
