@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Box from '@material-ui/core/Box';
 import PageDefault from '../../../components/PageDefault';
@@ -40,6 +40,16 @@ function CadastroCategoria() {
     setForm(values);
   }
 
+  // utilizando efeitos no react
+  useEffect(() => {
+    const URL_BACK = 'http://localhost:6060/categorias';
+    // pegando resposta do servidor e setando variavel de categoria
+    fetch(URL_BACK).then(async (response) => {
+      const resp = await response.json();
+      setCategorias([...resp]);
+    });
+  }, []);
+
   return (
     <PageDefault>
       {/* <h1>Cadastro de Categoria</h1> */}
@@ -77,16 +87,25 @@ function CadastroCategoria() {
           name="cor"
           onChange={saveState}
         />
-        <ul>
-          {categorias.map((categoria, indice) =>
-          // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
-            <li key={categoria + indice}>{categoria.titulo}</li>)}
-        </ul>
         {/* Ordena o botão para o lado direito da tela */}
         <Box display="flex" justifyContent="flex-end">
           <FormButton value="Cadastrar" />
         </Box>
       </form>
+
+      {/* Aparece se não existir categorias */}
+      {categorias.length === 0 && (
+      <div>
+        Carregando...
+      </div>
+      )}
+
+      <ul>
+        {categorias.map((categoria, indice) =>
+        // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
+          <li key={categoria + indice}>{categoria.titulo}</li>)}
+      </ul>
+
       <Link to="/">Ir para home</Link>
     </PageDefault>
   );
