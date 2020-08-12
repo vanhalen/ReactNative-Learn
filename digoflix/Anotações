@@ -1,0 +1,38 @@
+Fazer
+
+
+
+Aula 4 
+
+EsLint
+prop-type
+JSON Server
+
+- Construir o backend com o JSON Server
+- Cadastrar novas categorias no db.json
+- Listagemi de categorias
+
+
+
+
+Subir servidor backend + front
+________________________________________
+
+
+1. Configurar o arquivo packege.json
+  "scripts": {
+    // Ddentificando o db.json como backend na porta 6060 (Retirar Comentário)
+    "server": "json-server --watch db.json --port 6060",
+    //Rodando o concurrently para subir o back e front
+    "dev": "concurrently \"react-scripts start\" \"npm run server\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+
+2. npm install json-server
+3. npm install --save-dev concurrently
+4. yarn install
+5. yarn run dev
