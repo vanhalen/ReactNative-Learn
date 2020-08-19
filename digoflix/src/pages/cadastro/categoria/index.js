@@ -5,6 +5,8 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import FormButton from '../../../components/FormButton';
 
+const URL_BACK = 'http://localhost:6060/';
+
 function CadastroCategoria() {
   const values = {
     titulo: '',
@@ -34,17 +36,37 @@ function CadastroCategoria() {
   /** Faz Submit do form */
   function handleSubmit(infosDoEvento) {
     infosDoEvento.preventDefault();
-    setCategorias([...categorias, form]);
 
-    // Limpando campos
-    setForm(values);
+    fetch(`${URL_BACK}categorias`, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        titulo: form.titulo,
+        link_extra: form.link_extra,
+        cor: form.cor,
+        descricao: form.descricao,
+      }),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        setCategorias([...categorias, response]);
+
+        // Limpando campos
+        setForm(values);
+      })
+      .catch((err) => {
+        console.log(err);
+        alert('Ocorreu um erro inesperado!');
+      });
   }
 
   // utilizando efeitos no react
   useEffect(() => {
-    const URL_BACK = 'http://localhost:6060/categorias';
     // pegando resposta do servidor e setando variavel de categoria
-    fetch(URL_BACK).then(async (response) => {
+    fetch(`${URL_BACK}categorias`).then(async (response) => {
       const resp = await response.json();
       setCategorias([...resp]);
     });
@@ -94,16 +116,13 @@ function CadastroCategoria() {
       </form>
 
       {/* Aparece se não existir categorias */}
-      {categorias.length === 0 && (
-      <div>
-        Carregando...
-      </div>
-      )}
+      {categorias.length === 0 && <div>Carregando...</div>}
 
       <ul>
-        {categorias.map((categoria, indice) =>
-        // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
-          <li key={categoria + indice}>{categoria.titulo}</li>)}
+        {categorias.map((categoria, indice) => (
+          // return <li key={`${categoria}${indice}`}>{categoria}</li>; //É a mesma coisa
+          <li key={categoria + indice}>{categoria.titulo}</li>
+        ))}
       </ul>
 
       <Link to="/">Ir para home</Link>
