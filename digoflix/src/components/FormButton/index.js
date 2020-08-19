@@ -19,10 +19,10 @@ const ButtonSucces = withStyles({
   },
 })(Button);
 
-function FormButton(props) {
+function FormButton({ value }) {
   return (
     <ButtonSucces variant="outlined" color="primary" type="submit">
-      {props.value}
+      {value}
     </ButtonSucces>
   );
 }
