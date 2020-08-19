@@ -19,6 +19,8 @@ Subir servidor backend + front
 ________________________________________
 
 
+Local
+
 1. Configurar o arquivo packege.json
   "scripts": {
     // Ddentificando o db.json como backend na porta 6060 (Retirar Comentário)
@@ -36,3 +38,21 @@ ________________________________________
 3. npm install --save-dev concurrently
 4. yarn install
 5. yarn run dev
+
+
+Server - HIROKU (https://heroku.com)
+
+1. criar arquivo server.js na raiz do projeto
+2. configurar o arquivo packege.json
+  "scripts": {
+    "server": "node ./server.js",
+    "dev": "concurrently \"react-scripts start\" \"npm run server\"",
+    "start": "npm run server",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  3 .
+
+
+
