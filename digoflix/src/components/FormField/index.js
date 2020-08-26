@@ -60,6 +60,7 @@ function FormField({
       required={required}
       multiline={multiline}
       fullWidth
+      width="50%"
     />
   );
 }
